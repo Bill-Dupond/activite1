@@ -1,5 +1,5 @@
 html {
-    font-size: 112.5%; /* =18px, the default rem unit size */
+    font-size: 125%; /* =18px, the default rem unit size */
 }
 
 body {
