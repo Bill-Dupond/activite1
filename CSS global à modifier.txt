@@ -107,3 +107,7 @@ max-width:479px) {
     padding-right: 20px;
 }
 }
+
+.site-header #mainnav ul li ul li ul {
+    left: 100%;
+}
