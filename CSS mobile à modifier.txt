@@ -1,0 +1,309 @@
+html {
+    font-size: 112.5%; /* =18px, the default rem unit size */
+}
+
+body {
+    background: #F9F5E8;
+}
+
+.contentBody{
+    background: #F9F5E8;
+    color: #333333;
+}
+
+.progress_pages_pending {
+    color: #000002;
+}
+
+a {
+    color: #114da4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #114da4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #114da4;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0068fd;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 801px) {
+    body{
+            background: #faf7ee;
+    }
+}
+
+/* CSS rules - Base Implementation*/
+html, body, .__reading__mode__mainbody, #htmlNonSecureZone, .__reading__mode__extracted__article__body{
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+
+    line-height:160%;      /* Keep in sync with bottom margin of #content p*/
+    font-family:'Sitka Text',Georgia,Cambria,Calibri;
+
+    position: relative;
+}
+
+.header_container { 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+.contentBody {
+    width: auto;
+    max-width: 42rem;
+    padding: 2.444rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress_pages_pending {
+    margin-left:calc(50% - 10px);
+    margin-right:auto;
+}
+
+.progress_pages_pending::-ms-fill {
+    animation-name:-ms-ring;
+}
+
+.acciframe {
+    display:none;
+}
+
+.__reading__mode__bylineentries {
+    margin:0 0 36px 0;
+}
+
+.__reading__mode__extracted__bylineentry {
+    margin:0;
+    padding:0;
+    position:relative;
+    line-height: 160%;
+}
+
+#metaDivider {
+    display:none;
+    font-size:0.8rem;
+    top : -1px;
+    position : relative;
+    color:#333;
+}
+
+#source a{
+    text-decoration:none;
+}
+
+.__reading__mode__extracted__dominant__image {
+    margin-bottom:15px;         /* Keep this value synced with DOMINANT_IMAGE_MARGIN_BOTTOM */
+    overflow:hidden;
+    break-before: avoid-column;
+    break-inside: avoid-column;
+    max-width: 42rem;
+}
+
+#contenthost {
+    position:fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+
+#content p:first-child {
+   padding:0;
+}
+
+#content p{
+    padding:0;
+    line-height:160%;
+
+    -ms-hyphenate-limit-chars:6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphens: auto;
+}
+
+#inline_image {
+    float:left;
+    margin:8px 1rem .5rem 0;
+}
+
+#inline_image img{
+    margin:0 0 0 0;
+}
+
+#inline_image p {
+    margin:0 0 0 0;
+    font-style:italic;
+    font-size:.8rem;
+}
+
+.ieheightlimitimageCC {
+    width: auto;
+    max-height: 75%;
+    max-width: 42rem;
+}
+
+ieheightlimitcaptionCC {
+    width: auto;
+    max-height: 25%;
+    max-width: 42rem;
+}
+
+.ieheightlimitimage {
+    width: auto;
+    max-width: 42rem;
+}
+
+.iewidthlimitimage {
+    height: auto;
+    width: 100%;
+    max-width: 42rem;
+}
+
+.ienolimitimage {
+    height: auto;
+    width: auto;
+    max-width: 42rem;
+}
+
+.__reading__mode__extracted__imagecontainer {
+    margin-bottom: 5px;
+    line-height: 0;
+
+    min-width: 100px;
+    max-width: 100%;
+    max-height: 50%;
+
+    display: block;
+    break-inside:avoid-column;
+}
+
+.__reading__mode__extracted__imagecontainer__caption {
+    margin-top: 0.667rem;
+    min-width: 100px;
+    display: block;
+    font-size:0.667rem;
+    line-height:160%;
+    font-family: 'Sitka Small',Georgia;
+    font-style:italic;
+    break-before: avoid-column;
+
+    overflow-x: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+blockquote {
+    margin:1.3rem 0;
+    padding:0 2rem 0 1.3rem;
+    text-align:justify;
+}
+
+ol, ul {
+    margin:1rem 2rem 1.3rem 0;
+}
+
+#copyright {
+    font-family:'Sitka Small',Georgia,Cambria,Calibri;
+    margin-top:2rem;
+    font-size:0.8rem;
+}
+
+#__reading__mode__sendfeedback {
+    margin-top:2rem;
+    font-size:0.8rem;
+    display:none;
+}
+
+h1 {
+    font-family:'Sitka Banner',Georgia,Cambria,Calibri;
+    font-weight:normal;
+    padding:0;
+    margin:2.444rem 0 0;
+    font-size:2.333rem;
+    line-height: 160%;
+}
+
+h2 {
+    font-family:'Sitka Heading',Georgia,Cambria,Calibri;
+    font-weight:normal;
+    padding:0;
+    margin:2rem 0 0;
+    font-size:1.777rem;
+    line-height:160%;
+}
+
+h3 {
+    font-family:'Sitka Subheading',Georgia,Cambria,Calibri;
+    font-weight:normal;
+    padding:0;
+    margin:0.667rem 0 1.111rem;
+    font-size:1.333rem;
+    line-height:160%;
+}
+
+h4 {
+    font-family:'Sitka Text',Georgia,Cambria,Calibri;
+    font-weight:normal;
+    font-style: italic;
+    padding:0;
+    margin:.8rem 0 .8rem 0;
+    font-size:1rem;
+    line-height:160%;
+}
+
+h5 {
+    font-family:'Sitka Small',Georgia,Cambria,Calibri;
+    font-size:0.667rem;
+    padding:0;
+    margin:.8rem 0 0 0;
+    font-weight: bold;
+}
+
+h6 {
+    font-family:'Sitka Small',Georgia,Cambria,Calibri;
+    font-size:0.667rem;
+    padding:0;
+    margin:.8rem 0 0 0;
+    font-style: italic;
+    font-weight:normal;
+}
+
+@-ms-viewport { width: device-width; }
+
+@media screen and (max-width: 42rem) {
+    .contentBody {
+        width: auto;
+        padding: 0.667rem;
+    }
+
+    h1 {
+        font-size:1.667rem;
+        font-family:'Sitka Heading',Georgia,Cambria,Calibri;
+    }
+
+    h2 {
+        font-size:1.333rem;
+        font-family:'Sitka Subheading',Georgia,Cambria,Calibri;
+    }
+}
